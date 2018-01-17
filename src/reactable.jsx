@@ -25,7 +25,7 @@ if (!Array.prototype.find) {
             if (typeof predicate !== 'function') {
                 throw new TypeError('predicate must be a function');
             }
-            var list = Object(this);
+            var list = Object(this); // 从来没这么用过  好新奇
             var length = list.length >>> 0;
             var thisArg = arguments[1];
             var value;
